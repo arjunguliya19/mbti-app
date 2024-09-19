@@ -46,16 +46,27 @@ const UserInfoForm = ({ onSubmit }) => {
 
 const Introduction = ({ onStart }) => (
   <div className="container">
-    <h1 className="title">Welcome to the 16 Personalities Test</h1>
+    <h1 className="title">Welcome to the Personality Identifier Test by CyberSharp</h1>
+    <h2 className="sub-title">How It Helps</h2>
     <p className="text">
-      The Myers-Briggs Type Indicator (MBTI) is a framework that helps you understand your personality preferences. It can provide insights into your strengths, weaknesses, and potential career paths.
+      This test is based on Myers-Briggs Type Indicator (MBTI) framework and helps you understand your personality preferences. It can provide insights into your strengths, weaknesses, and potential career paths.
     </p>
+    <h2 className="sub-title">How to Answer the Questions</h2>
     <p className="text">
       This test consists of 60 questions. For each question, choose the option that best describes you. There are no right or wrong answers, so be honest and go with your first instinct.
+    <ul className="list">
+          <li>Read each statement carefully</li>
+          <li>Respond based on your genuine interests, not what you think you should like</li>
+          <li>Choose the option that best represents your level of agreement</li>
+          <li>Don't overthink – your first instinct is often the most accurate</li>
+          <li>Answer all questions for the most accurate results</li>
+    </ul>
     </p>
-    <p className="text">
-      Please provide your information to start the test:
-    </p>
+        <h2 className="subtitle">Please provide your information to start the test:</h2>
+	<p className="text">
+          Since we will be emailing you the results of the test, please ensure your contact details are filled correctly.
+        </p>
+
     <UserInfoForm onSubmit={onStart} />
   </div>
 );
